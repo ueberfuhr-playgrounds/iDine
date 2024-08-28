@@ -17,6 +17,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build
+      working-directory: ./iDine
       run: swift build -v
     - name: Run tests
+      working-directory: ./iDine
       run: swift test -v
